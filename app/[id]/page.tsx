@@ -58,28 +58,28 @@ function Country({ params }: { params: { id: string } }) {
   const nativeNameKey = Object.keys(country.name.nativeName || {})[0];
 
   return (
-    <div className='p-10 dark:bg-gray-800 dark:!text-white min-h-[calc(100vh-70px)]'>
+    <div className='md:p-10 p-5 dark:bg-gray-800 dark:!text-white min-h-[calc(100vh-70px)]'>
       <div
         onClick={() => router.back()}
         className='flex items-center gap-1 px-3 py-1 w-fit border rounded-md cursor-pointer mb-10'>
         <FaLongArrowAltLeft /> <p>Back</p>
       </div>
 
-      <div className='flex items-center'>
+      <div className='md:flex items-center'>
         <Image
           width={100}
           height={100}
           src={country.flags?.svg || "/next.svg"}
           alt={country.name.common}
-          className='w-2/5 h-2/5 object-cover'
+          className='md:w-2/5 w-full md:h-2/5 object-cover'
           priority
         />
-        <div className='ml-10 '>
-          <div className='text-2xl font-semibold mb-5'>
+        <div className='md:ml-10 mt-5 md:mt-0 '>
+          <div className='md:text-2xl text-3xl font-semibold mb-5'>
             {country.name.common}
           </div>
-          <div className='flex flex-col flex-wrap max-h-40 gap-x-20 gap-y-2'>
-            <h2 className='w-72 truncate'>
+          <div className='flex flex-col flex-wrap md:max-h-40 gap-x-20 gap-y-2'>
+            <h2 className='md:w-72 truncate'>
               Native Name:{" "}
               <span className='text-slate-500 dark:text-white/50 font-normal antialiased'>
                 {country.name.nativeName?.[nativeNameKey]?.official || "N/A"}
@@ -125,7 +125,7 @@ function Country({ params }: { params: { id: string } }) {
                   : "N/A"}
               </span>
             </h2>
-            <h2 className='w-64 truncate'>
+            <h2 className='md:w-64 truncate'>
               Languages:{" "}
               <span className='text-slate-500 dark:text-white/50 font-normal antialiased'>
                 {country.languages

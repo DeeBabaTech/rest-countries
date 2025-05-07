@@ -1,9 +1,9 @@
 export default function Loading() {
   return (
-    <div className='p-10 w-full dark:bg-gray-800 min-h-[calc(100vh-70px)]'>
+    <div className='md:p-10 p-5 w-full dark:bg-gray-800 min-h-[calc(100vh-70px)]'>
       <div
         role='status'
-        className='relative flex w-[23%] flex-col animate-pulse rtl:space-x-reverse'>
+        className='relative flex md:w-[23%] w-full flex-col animate-pulse rtl:space-x-reverse'>
         <div className='flex items-center justify-center w-full h-48 bg-gray-300 rounded-sm dark:bg-gray-700'>
           <svg
             className='w-10 h-10 text-gray-200 dark:text-gray-600'

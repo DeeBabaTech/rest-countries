@@ -10,8 +10,8 @@ function Header({
   darkMode: boolean;
 }) {
   return (
-    <div className='bg-white dark:bg-gray-700 dark:text-white dark:shadow-lg px-10 h-[70px] flex items-center justify-between shadow-lg'>
-      <Link href='/' className='font-bold text-2xl'>
+    <div className='bg-white dark:bg-gray-700 dark:text-white dark:shadow-lg md:px-10 px-5 h-[70px] flex items-center justify-between shadow-lg'>
+      <Link href='/' className='font-bold md:text-2xl text-lg'>
         Where in the world?
       </Link>
       <div

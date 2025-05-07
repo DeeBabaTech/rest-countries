@@ -24,8 +24,8 @@ export default function Home() {
 
   return (
     <div className='bg-slate-100 dark:bg-gray-800 min-h-[calc(100vh-70px)]'>  
-      <div className='px-10 py-5 flex items-center justify-between'>
-        <div className='relative'>
+      <div className='md:px-10 px-5 py-5 md:flex items-center justify-between'>
+        <div className='relative mb-5 md:mb-0'>
           <svg
             className='size-5 absolute top-3 left-3 text-gray-400'
             stroke='currentColor'
@@ -40,7 +40,7 @@ export default function Home() {
           </svg>
           <input
             placeholder='Search for a country'
-            className='border-gray-300 pl-10 pr-32  py-3 text-sm shadow-md focus:outline-none'
+            className='border-gray-300 pl-10 md:pr-32 w-full md:w-fit py-3 text-sm shadow-md focus:outline-none'
             value={countryName}
             onChange={(e) => {
               setCountryName(e.target.value);

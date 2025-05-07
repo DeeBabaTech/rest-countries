@@ -30,13 +30,13 @@ export default function Countries({ data }: CountriesProps) {
 
   return (
     <>
-      <div className='px-10 flex flex-wrap gap-y-10 gap-x-[2.6%] mt-10 '>
+      <div className='md:px-10 px-5 flex flex-wrap gap-y-10 gap-x-[2.6%] mt-10 '>
         {filterData &&
           filterData?.map((item, index) => (
             <Link
               href={`/${item?.cca2}`}
               key={index}
-              className='relative flex w-[23%] flex-col rounded-xl bg-white dark:bg-gray-800 dark:border border-white/15 bg-clip-border text-gray-700 dark:text-white shadow-lg hover:scale-105 transition-all z-10 s'>
+              className='relative flex md:w-[23%] w-full flex-col rounded-xl bg-white dark:bg-gray-800 dark:border border-white/15 bg-clip-border text-gray-700 dark:text-white shadow-lg hover:scale-105 transition-all z-10 s'>
               <Image
                 width={100}
                 height={10}
