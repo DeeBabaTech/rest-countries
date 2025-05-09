@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Countries",
     description: "REST Countries API with color theme switcher",
-    url: "https://restcountries-best.vercel.app/",
+    url: "https://restcountries-best.vercel.app",
     siteName: "REST Countries developed by @_iamDeeBaba",
     images: [
       {
